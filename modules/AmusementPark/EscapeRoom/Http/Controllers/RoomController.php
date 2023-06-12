@@ -25,29 +25,6 @@ class RoomController extends ApiController
     {            
         return $this->successResponse($this->roomService->getAllEscapeRooms(),Response::HTTP_OK);
     }
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param Request $request
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function store()
-    {
-        // $basicInfo = $this->userBasicInformationService->store($request);
-        // return $this->responseErrorData($basicInfo) ?? $this->responseSuccessData(json_decode($basicInfo->getBody()->getContents()));
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param Request $request
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function update()
-    {
-        // $basicInfo = $this->userBasicInformationService->update($request);
-        // return $this->responseErrorData($basicInfo) ?? $this->responseSuccessData(json_decode($basicInfo->getBody()->getContents()));
-    }
 
 
     public function show($escapeRoomId)
